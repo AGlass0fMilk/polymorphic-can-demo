@@ -45,6 +45,12 @@ void send()
 
 int main()
 {
+    // Uncomment to test copy constructor deletion inheritance
+    //CAN can3(can2);
+
+    // Uncomment to test copy assignment operator deletio inheritance
+    CAN can4 = can2;
+
     printf("main()\n");
     ticker.attach(&send, 1);
     CANMessage msg;
